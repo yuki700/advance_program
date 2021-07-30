@@ -1,6 +1,6 @@
 public class FactorialOfNumber {
-    public long factorialOfNumber(int n) {
-        int factorialOfNumber;
+    public static long factorialOfNumber(int n) {
+        int factorialOfNumber = 1;
         for (int i = n; i > 0; i--) {
             String formula = i + "*" + factorialOfNumber;
             factorialOfNumber = factorialOfNumber * i;
@@ -8,5 +8,7 @@ public class FactorialOfNumber {
         }
         return factorialOfNumber;
     }
-    System.out.println(factorialOfNumber(10));
+    public static void main(String[] args) {
+        System.out.println("factorialOfNumber is " + factorialOfNumber(10));
+    }
 }
